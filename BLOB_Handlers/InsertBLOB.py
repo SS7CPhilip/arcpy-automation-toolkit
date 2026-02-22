@@ -1,9 +1,10 @@
 """
-Script documentation
-- Tool parameters are accessed using arcpy.GetParameter() or 
-                                     arcpy.GetParameterAsText()
-- Update derived parameter values using arcpy.SetParameter() or
-                                        arcpy.SetParameterAsText()
+InsertBLOB.py
+Reads image files from a specified local directory and inserts their binary data 
+into a BLOB field within a feature class. Relies on an existing field containing 
+the exact filename to match the file to the correct geographic feature.
+
+Dependencies: arcpy
 """
 import arcpy
 def script_tool(outFeatureClass, inFolder, inFieldName, outFieldName):
@@ -32,3 +33,4 @@ if __name__ == "__main__":
     outFieldName = arcpy.GetParameterAsText(3)
     script_tool(outFeatureClass, inFolder, inFieldName, outFieldName)
     #arcpy.SetParameterAsText(4, "Result")
+
