@@ -31,11 +31,13 @@ if __name__ == "__main__":
     fileType = arcpy.GetParameterAsText(3)
     # Set the folder to save extracted photos
     destFolder = arcpy.GetParameterAsText(4)
-    #fc = r"D:\Fangda\3M_Sample\Caltrans_Test.gdb\Sign_Support"
-    #fieldsName = ["SUPPORT_ID", "SIGN_SUPPORT_PHOTO"]
+    # Example input values for testing:
+    # fc = r"C:\GIS_Data\Sample.gdb\Sign_Support"
+    # fieldsName = ["SUPPORT_ID", "SIGN_SUPPORT_PHOTO"]
     fieldsName = []
     fieldsName.append(fileName_field)
     fieldsName.append(BLOB_field)
     fileType = '.' + fileType
     script_tool(fc,fieldsName,fileType,destFolder)
     #arcpy.SetParameterAsText(2, "Result")
+
