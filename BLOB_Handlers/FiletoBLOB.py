@@ -1,9 +1,10 @@
 """
-Script documentation
-- Tool parameters are accessed using arcpy.GetParameter() or 
-                                     arcpy.GetParameterAsText()
-- Update derived parameter values using arcpy.SetParameter() or
-                                        arcpy.SetParameterAsText()
+FiletoBLOB.py
+Performs a table join to associate image filenames with feature IDs, then reads 
+the corresponding files from a local directory and inserts them directly into 
+a BLOB field within the feature class. Cleans up the joined fields upon completion.
+
+Dependencies: arcpy
 """
 import arcpy
 def script_tool(outFeatureClass, inFolder, inFieldName, outFieldName):
@@ -41,3 +42,4 @@ if __name__ == "__main__":
     script_tool(outFeatureClass, inFolder, inFieldName, outFieldName)
     arcpy.DeleteField_management(outFeatureClass, inFieldName, "DELETE_FIELDS")
     #arcpy.SetParameterAsText(4, "Result")
+
