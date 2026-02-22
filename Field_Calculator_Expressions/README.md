@@ -4,10 +4,10 @@ This folder contains a collection of saved Python expressions (`.cal` files) des
 
 ## 📂 Contents
 
-* [cite_start]**`Decimal feet to feet & inches.cal`**: Converts a decimal measurement (e.g., from a length field) into a standard feet and inches string format (e.g., `X'Y"`)[cite: 37].
-* [cite_start]**`Replace string between two substring.cal`**: Uses Python's `re` (regular expression) module to clean up long network file paths, specifically stripping out preceding directory information to isolate the relevant filename[cite: 38].
-* [cite_start]**`SequentialNumber.cal`**: Uses a global Python variable to generate a custom, incrementing sequential ID for records, independent of the standard Object ID[cite: 39].
-* [cite_start]**`String to Decimal and find maximum.cal`**: Evaluates multiple string fields, safely converts valid entries to floats while gracefully bypassing empty or non-numeric strings, finds the maximum value among them, and returns that maximum plus one[cite: 40, 41, 42].
+**`Decimal feet to feet & inches.cal`**: Converts a decimal measurement (e.g., from a length field) into a standard feet and inches string format (e.g., `X'Y"`).
+**`Replace string between two substring.cal`**: Uses Python's `re` (regular expression) module to clean up long network file paths, specifically stripping out preceding directory information to isolate the relevant filename.
+**`SequentialNumber.cal`**: Uses a global Python variable to generate a custom, incrementing sequential ID for records, independent of the standard Object ID.
+**`String to Decimal and find maximum.cal`**: Evaluates multiple string fields, safely converts valid entries to floats while gracefully bypassing empty or non-numeric strings, finds the maximum value among them, and returns that maximum plus one.
 
 ## 🚀 How to Use
 
