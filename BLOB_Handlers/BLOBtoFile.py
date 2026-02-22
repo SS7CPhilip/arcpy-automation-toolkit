@@ -1,9 +1,10 @@
 """
-Script documentation
-- Tool parameters are accessed using arcpy.GetParameter() or 
-                                     arcpy.GetParameterAsText()
-- Update derived parameter values using arcpy.SetParameter() or
-                                        arcpy.SetParameterAsText()
+BLOBtoFile.py
+Extracts Binary Large Object (BLOB) data (such as inspection photos) from a 
+geodatabase feature class. Iterates through the records and exports the binary 
+data to a specified local directory as individual files.
+
+Dependencies: arcpy, os
 """
 import arcpy
 import os
@@ -40,4 +41,5 @@ if __name__ == "__main__":
     fileType = '.' + fileType
     script_tool(fc,fieldsName,fileType,destFolder)
     #arcpy.SetParameterAsText(2, "Result")
+
 
